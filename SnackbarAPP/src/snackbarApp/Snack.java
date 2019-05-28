@@ -16,7 +16,6 @@ public class Snack
 	// Snack has the methods (so can);
 	public Snack(String name, int quantity, float cost, int vendingId)
 	{
-		//so can goes here
 		maxId++;
 		id = maxId;
 
@@ -28,6 +27,10 @@ public class Snack
 	}
 	public int getId() {
 		return id;
+	}
+
+	public void setId(int id){
+		this.id = id;
 	}
 
 	public String getName(){
@@ -46,5 +49,24 @@ public class Snack
 		this.cost = cost;
 	}
 
-	
+	public int getVendingId(){
+		return vendingId;
+	}
+
+	public void setVendingId(int vendingId){
+		this.vendingId = vendingId;
+	}
+
+	public int getQuantity(){
+		return quantity;
+	}
+
+	public void addQuantity(){
+		this.quantity =  this.quantity + quantity;
+	}
+
+	public int buyQuantity(int quantity){
+		this.quantity = this.quantity - quantity;
+		return this.quantity;
+	}
 }
