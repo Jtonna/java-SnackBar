@@ -24,7 +24,27 @@ public class Snack
 		this.quantity = quantity;
 		this.cost = cost;
 		this.vendingId = vendingId;
-		
+
+	}
+	public int getId() {
+		return id;
 	}
 
+	public String getName(){
+		return name;
+	}
+
+	public void setName(String name){
+		this.name = name;
+	}
+
+	public float getCost(){
+		return cost;
+	}
+
+	public void setCost(float cost){
+		this.cost = cost;
+	}
+
+	
 }
