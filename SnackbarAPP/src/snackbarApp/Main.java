@@ -18,7 +18,7 @@ public class Main
 
 	c1.purchase(s4.getTotalCost(4));
 	s4.buySnack(4);
-	System.out.println("test");
+	System.out.println("testing");
 	System.out.println("Customer 1 buys 3 of snack 4. " + c1.getName() + " has $" + c1.getCashOnHand() + " remaining. There are also " + s3.getQuantity() + " of " + s3.getName() + " left. " + "\n");
 	}
 
