@@ -30,7 +30,7 @@ public class Customer{
 		this.cashOnHand += cash;
 	}
 
-	public void purchase(double cost){
+	public void purchase(double cash){
 		this.cashOnHand -= cash;
 	}
 }

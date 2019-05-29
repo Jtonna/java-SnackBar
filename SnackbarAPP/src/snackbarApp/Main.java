@@ -11,13 +11,14 @@ public class Main
 	VendingMachine v2 = new VendingMachine("Drink");
 	VendingMachine v3 = new VendingMachine("Office");
 
-	Snack s1 = new Snack("Chips", 36, 1.75, food.getId());
-	Snack s2 = new Snack("Chocolate Bar", 36, 1.00, food.getId());
-	Snack s3 = new Snack("Pretzal", 30, 2.00, food.getId());
-	Snack s4 = new Snack("Soda", 24, 2.5, drink.getId());
-	Snack s5 = new Snack("Water", 20, 2.75, drink.getId());
+	Snack s1 = new Snack("Chips", 36, 1.75, v1.getId());
+	Snack s2 = new Snack("Chocolate Bar", 36, 1.00, v1.getId());
+	Snack s3 = new Snack("Pretzal", 30, 2.00, v1.getId());
+	Snack s4 = new Snack("Soda", 24, 2.5, v2.getId());
+	Snack s5 = new Snack("Water", 20, 2.75, v2.getId());
 
 	c1.purchase(s4.getTotalCost(4));
 	s4.buySnack(4);
+	System.out.printIn("Customer 1 buys 3 of snack 4. " + c1.getName());
 	}
 }
