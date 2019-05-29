@@ -17,7 +17,7 @@ public class Main
 	Snack s4 = new Snack("Soda", 24, 2.5, drink.getId());
 	Snack s5 = new Snack("Water", 20, 2.75, drink.getId());
 
-
-
+	c1.purchase(s4.getTotalCost(4));
+	s4.buySnack(4);
 	}
 }
