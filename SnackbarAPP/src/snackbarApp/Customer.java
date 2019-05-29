@@ -1,8 +1,8 @@
 package snackbarApp;
 
 public class Customer{
+	private static int maxId = 0;
 	private int id;
-	private static int maxId;
 	private String name;
 	private double cashOnHand;
 
@@ -26,11 +26,11 @@ public class Customer{
 		return cashOnHand;
 	}
 
-	public void addCash(double amount){
-		cashOnHand += amount;
+	public void addCash(double cash){
+		this.cashOnHand += cash;
 	}
 
-	public void buy(double cost){
-		cashOnHand -= cost;
+	public void purchase(double cost){
+		this.cashOnHand -= cash;
 	}
 }
