@@ -2,8 +2,7 @@ package snackbarApp;
 
 public class Main
 {
-	public static void main(String[] args)
-	{
+	private static void CustomerInteractions(){
 	Customer c1 = new Customer("Jane", 56.50);
 	Customer c2 = new Customer("Mario", 23.25);
 
@@ -19,6 +18,11 @@ public class Main
 
 	c1.purchase(s4.getTotalCost(4));
 	s4.buySnack(4);
-	System.out.printIn("Customer 1 buys 3 of snack 4. " + c1.getName());
+	System.out.println("test");
+	System.out.println("Customer 1 buys 3 of snack 4. " + c1.getName() + " has $" + c1.getCashOnHand() + " remaining. There are also " + s3.getQuantity() + " of " + s3.getName() + " left. " + "\n");
+	}
+
+	public static void main(String[] args){
+		CustomerInteractions();
 	}
 }
