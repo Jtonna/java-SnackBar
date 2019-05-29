@@ -69,4 +69,8 @@ public class Snack
 		this.quantity = this.quantity - quantity;
 		return this.quantity;
 	}
+
+	public float getTotalCost(float quantity){
+		return cost * quantity;
+	}
 }
